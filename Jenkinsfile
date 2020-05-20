@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('archive') {
+      steps {
+        archiveArtifacts 'target/*.jar'
+      }
+    }
+
   }
 }
