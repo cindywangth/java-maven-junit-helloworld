@@ -13,7 +13,7 @@ pipeline {
       }
     }
 
-    stage('Archive') {
+    stage('report') {
       steps {
         junit '**/target/surefire-reports/TEST-*.xml'
       }
